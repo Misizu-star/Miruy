@@ -15,6 +15,7 @@ set(SRC
         ./src/hook.cc
         ./src/fd_manager.cc
         ./src/address.cc
+        ./src/socket.cc
     )
 
 set(LIBS 
@@ -30,3 +31,6 @@ target_link_libraries(test ${LIBS})
 
 add_executable(test_io ${SRC} ./test/test_io.cpp)
 target_link_libraries(test_io ${LIBS})
+
+add_executable(test_socket ${SRC} ./test/test_socket.cpp)
+target_link_libraries(test_socket ${LIBS})
