@@ -9,6 +9,7 @@
 #include "iomanager.h"
 #include "hook.h"
 #include "socket.h"
+#include "bytearray.h"
 #include "util.h"
 
 

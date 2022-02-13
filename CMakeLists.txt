@@ -16,6 +16,7 @@ set(SRC
         ./src/fd_manager.cc
         ./src/address.cc
         ./src/socket.cc
+        ./src/bytearray.cc
     )
 
 set(LIBS 
@@ -34,3 +35,5 @@ target_link_libraries(test_io ${LIBS})
 
 add_executable(test_socket ${SRC} ./test/test_socket.cpp)
 target_link_libraries(test_socket ${LIBS})
+
+add_executable(test_bytearray ./src/bytearray.cc  ./test/test_bytearray.cpp)
